@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1772190280,,"wq"
+|2,0,1772191492,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,24 +25,47 @@
 # Registers:
 
 # File marks:
-'0  1  4  ~/requirements.txt
-|4,48,1,4,1772190280,"~/requirements.txt"
-'1  9  37  ~/app.py
-|4,49,9,37,1772190239,"~/app.py"
+'0  11  0  ~/dockerfile
+|4,48,11,0,1772191492,"~/dockerfile"
+'1  1  4  ~/requirements.txt
+|4,49,1,4,1772190280,"~/requirements.txt"
+'2  9  37  ~/app.py
+|4,50,9,37,1772190239,"~/app.py"
 
 # Jumplist (newest first):
+-'  11  0  ~/dockerfile
+|4,39,11,0,1772191492,"~/dockerfile"
+-'  1  0  ~/dockerfile
+|4,39,1,0,1772191473,"~/dockerfile"
+-'  1  4  ~/requirements.txt
+|4,39,1,4,1772190280,"~/requirements.txt"
 -'  1  4  ~/requirements.txt
 |4,39,1,4,1772190280,"~/requirements.txt"
 -'  9  37  ~/app.py
 |4,39,9,37,1772190239,"~/app.py"
 -'  9  37  ~/app.py
 |4,39,9,37,1772190239,"~/app.py"
+-'  9  37  ~/app.py
+|4,39,9,37,1772190239,"~/app.py"
+-'  9  37  ~/app.py
+|4,39,9,37,1772190239,"~/app.py"
+-'  1  0  ~/app.py
+|4,39,1,0,1772190154,"~/app.py"
+-'  1  0  ~/app.py
+|4,39,1,0,1772190154,"~/app.py"
 -'  1  0  ~/app.py
 |4,39,1,0,1772190154,"~/app.py"
 -'  1  0  ~/app.py
 |4,39,1,0,1772190154,"~/app.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/dockerfile
+	*	1772191491	0
+	"	11	0
+	^	11	0
+	.	10	24
+	+	10	24
 
 > ~/requirements.txt
 	*	1772190277	0
