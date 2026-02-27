@@ -32,3 +32,23 @@ usermod -aG docker jenkins
 reboot
 docker --version
 cat /var/lib/jenkins/secrets/initialAdminPassword
+vi app.py
+ls
+vi requirements.txt
+ls
+git init
+git add .
+git commit -m "code commit initial"
+git status
+git remote add origin https://github.com/ashapatilgithub/simple-python-CICD-app.git
+git push -u origin menu
+git push -u origin master
+vi dockerfile
+ls
+git status
+git add .
+git commit -m "docker file committed"
+git status
+git remote add origin https://github.com/ashapatilgithub/simple-python-CICD-app.git
+git push -u origin master
+docker images

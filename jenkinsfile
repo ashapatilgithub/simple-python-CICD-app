@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Code') {
+            steps {
+                git 'https://github.com/ashapatilgithub/simple-python-CICD-app.git'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t python-app .'
+            }
+        }
+         stage("Push to Docker Hub"){
+            steps {
+                echo "Pushing the image to docker hub"
+                withCredentials([usernamePassword(credentialsId:"dockerHub",passwordVariable:"dockerHubPass",usernameVariable:"dockerHubUser")]){
+                sh "docker tag python-app ${env.dockerHubUser}/python-app:latest"
+                sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass}"
+                sh "docker push ${env.dockerHubUser}/python-app:latest"
+                }
+            }
+        }
+        stage('container creation') {
+            steps {
+                sh "docker run -d -p 5000:5000 python-app"
+            }
+        }
+    }
+}
